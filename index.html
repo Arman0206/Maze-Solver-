@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h2>🧩 Maze Solver</h2>
+
+  <div class="controls">
+    <button onclick="setMode('start')">Set Start</button>
+    <button onclick="setMode('end')">Set End</button>
+
+    <select id="algorithm">
+      <option value="bfs">BFS</option>
+      <option value="dijkstra">Dijkstra</option>
+    </select>
+
+    <button onclick="solve()">Solve</button>
+    <button onclick="resetGrid()">Reset</button>
+  </div>
+
+  <div id="grid"></div>
+
+  <div class="legend">
+    <span><i class="start"></i>Start</span>
+    <span><i class="end"></i>End</span>
+    <span><i class="wall"></i>Wall</span>
+    <span><i class="visited"></i>Visited</span>
+    <span><i class="path"></i>Path</span>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
